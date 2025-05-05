@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply text-surface-800 dark:text-surface-200 bg-surface-50 dark:bg-surface-900 transition-colors duration-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  h4 {
+    @apply text-lg md:text-xl;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn bg-secondary text-white hover:bg-secondary-dark active:scale-95;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent border border-surface-300 dark:border-surface-600 hover:bg-surface-100 dark:hover:bg-surface-800 active:scale-95;
+  }
+
+  .card {
+    @apply rounded-xl bg-white dark:bg-surface-800 shadow-card p-6 transition-all duration-200;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 rounded-lg border border-surface-300 dark:border-surface-600 
+           bg-white dark:bg-surface-800 focus:outline-none focus:ring-2 
+           focus:ring-primary dark:focus:ring-primary-light transition-all duration-200;
+  }
+
+  .label {
+    @apply block mb-2 text-sm font-medium text-surface-700 dark:text-surface-300;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
