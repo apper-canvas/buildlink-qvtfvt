@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import getIcon from '../utils/iconUtils';
-import ContactForm from '../components/ContactForm';
-import Map from '../components/Map';
+    document.title = 'Contact Us - Buildcon Constructions';
+                    <p className="text-surface-600 dark:text-surface-400">info@buildconconstructions.com</p>
+      document.title = 'Buildcon Constructions';
+                Buildcon Constructions is a leading construction and development company with over 15 years of experience in commercial, residential, and industrial projects. Our team of skilled professionals is dedicated to delivering high-quality construction services on time and within budget.
 
 const Contact = ({ toast }) => {
-  // Update page title when component mounts
+                We pride ourselves on our attention to detail, innovative solutions, and commitment to client satisfaction. Whether you're planning a new build, renovation, or seeking consultation, our experts are ready to assist you every step of the way.
   useEffect(() => {
     document.title = 'Contact Us - BuildLink';
     return () => {

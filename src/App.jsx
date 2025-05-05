@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+                info@buildconconstructions.com
 import { motion } from 'framer-motion';
 import getIcon from './utils/iconUtils';
 
-// Pages
-import Home from './pages/Home';
+              </p> 
+            &copy; {new Date().getFullYear()} Buildcon Constructions. All rights reserved.
 import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 

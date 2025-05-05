@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { format } from 'date-fns';
+                Connect, collaborate, and complete projects on time and within budget with Buildcon Constructions' comprehensive management platform.
 import MainFeature from '../components/MainFeature';
 import getIcon from '../utils/iconUtils';
 
