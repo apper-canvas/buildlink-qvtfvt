@@ -7,6 +7,7 @@ import getIcon from './utils/iconUtils';
 // Pages
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Contact from './pages/Contact';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -34,6 +35,7 @@ function App() {
   const MoonIcon = getIcon('Moon');
   const HomeIcon = getIcon('Home');
   const BuildingIcon = getIcon('Building');
+  const PhoneIcon = getIcon('Phone');
 
   return (
     <>
@@ -51,6 +53,10 @@ function App() {
             </a>
             <a href="#projects" className="text-surface-700 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Projects</a>
             <a href="#features" className="text-surface-700 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Features</a>
+            <a href="/contact" className="flex items-center space-x-1 text-surface-700 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">
+              <PhoneIcon className="h-5 w-5" />
+              <span>Contact</span>
+            </a>
           </nav>
 
           <div className="flex items-center space-x-4">
@@ -72,6 +78,7 @@ function App() {
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<Home toast={toast} />} />
+          <Route path="/contact" element={<Contact toast={toast} />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
@@ -94,6 +101,7 @@ function App() {
                 <li><a href="/" className="hover:text-primary-light transition-colors">Home</a></li>
                 <li><a href="#projects" className="hover:text-primary-light transition-colors">Projects</a></li>
                 <li><a href="#features" className="hover:text-primary-light transition-colors">Features</a></li>
+                <li><a href="/contact" className="hover:text-primary-light transition-colors">Contact Us</a></li>
               </ul>
             </div>
             <div>
