@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-                info@buildconconstructions.com
 import { motion } from 'framer-motion';
+import { ToastContainer, toast } from 'react-toastify';
 import getIcon from './utils/iconUtils';
-
-              </p> 
-            &copy; {new Date().getFullYear()} Buildcon Constructions. All rights reserved.
+import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Contact from './pages/Contact';
 
@@ -43,7 +41,7 @@ function App() {
         <div className="container-custom flex items-center justify-between py-4">
           <div className="flex items-center space-x-2">
             <BuildingIcon className="h-7 w-7 text-primary" />
-            <span className="text-xl font-bold text-primary">BuildLink</span>
+            <span className="text-xl font-bold text-primary">Buildcon Constructions</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-6">
@@ -89,7 +87,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <BuildingIcon className="h-6 w-6 text-primary-light" />
-                <span className="text-lg font-bold">BuildLink</span>
+                <span className="text-lg font-bold">Buildcon Constructions</span>
               </div>
               <p className="text-surface-300 text-sm">
                 Connecting construction professionals and property developers while streamlining project management.
@@ -109,12 +107,12 @@ function App() {
               <p className="text-surface-300 text-sm">
                 123 Construction Ave<br />
                 Building City, BC 10001<br />
-                info@buildlink.com
+                info@buildconconstructions.com
               </p>
             </div>
           </div>
           <div className="mt-8 pt-6 border-t border-surface-700 text-center text-surface-400 text-sm">
-            &copy; {new Date().getFullYear()} BuildLink. All rights reserved.
+            &copy; {new Date().getFullYear()} Buildcon Constructions. All rights reserved.
           </div>
         </div>
       </footer>
